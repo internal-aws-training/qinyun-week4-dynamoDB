@@ -1,0 +1,25 @@
+{
+  "Project_Qinyun": [
+    {
+      "PutRequest": {
+        "Item": {
+          "projectName": {"S": "Customer"},
+          "projectType": {"S": "REA"},
+          "memberName": {"SS": ["Doudou", "Chenze", "MingMa"]},
+          "startDate": {"M": {"month": {"N":"2"}, "year":{"N":"2019"}}}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "projectName": {"S": "Data"},
+          "projectType": {"S": "REA"},
+          "memberName": {"SS": ["Shuai", "Jiaheng", "Wenguang"]},
+          "startDate": {"M": {"month": {"N":"1"}, "year":{"N":"2019"}}}
+        }
+      }
+    }
+  ]
+}
+

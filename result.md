@@ -41,3 +41,70 @@
     }
 }
 ```
+
+## Query Item
+```json
+{
+    "Item": {
+        "startDate": {
+            "M": {
+                "month": {
+                    "N": "3"
+                },
+                "year": {
+                    "N": "2019"
+                }
+            }
+        },
+        "projectName": {
+            "S": "Rent"
+        },
+        "projectType": {
+            "S": "REA"
+        },
+        "memberName": {
+            "M": {
+                "lead": {
+                    "S": "Yan Li"
+                },
+                "frontEnd": {
+                    "S": "Yechun Song"
+                }
+            }
+        }
+    }
+}
+```
+
+## After update
+```json
+{
+    "Attributes": {
+        "startDate": {
+            "M": {
+                "month": {
+                    "N": "3"
+                },
+                "year": {
+                    "N": "2019"
+                }
+            }
+        },
+        "projectName": {
+            "S": "Rent"
+        },
+        "projectType": {
+            "S": "REA"
+        },
+        "memberName": {
+            "SS": [
+                "Hong Wu",
+                "Jiajun",
+                "Qinyun",
+                "Yan Li",
+                "Yechun"
+            ]
+        }
+    }
+}
+```
