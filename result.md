@@ -146,3 +146,64 @@
     "ConsumedCapacity": null
 }
 ```
+
+## Scan table with condition
+```json
+{
+    "Items": [
+        {
+            "startDate": {
+                "M": {
+                    "month": {
+                        "N": "1"
+                    },
+                    "year": {
+                        "N": "2019"
+                    }
+                }
+            },
+            "projectName": {
+                "S": "Data"
+            },
+            "projectType": {
+                "S": "REA"
+            },
+            "memberName": {
+                "SS": [
+                    "Jiaheng",
+                    "Shuai",
+                    "Wenguang"
+                ]
+            }
+        },
+        {
+            "startDate": {
+                "M": {
+                    "month": {
+                        "N": "2"
+                    },
+                    "year": {
+                        "N": "2019"
+                    }
+                }
+            },
+            "projectName": {
+                "S": "Customer"
+            },
+            "projectType": {
+                "S": "REA"
+            },
+            "memberName": {
+                "SS": [
+                    "Chenze",
+                    "Doudou",
+                    "MingMa"
+                ]
+            }
+        }
+    ],
+    "Count": 2,
+    "ScannedCount": 3,
+    "ConsumedCapacity": null
+}
+```
