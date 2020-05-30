@@ -134,3 +134,32 @@
   - Strongly Consistent Reads
 
     When you request a strongly consistent read, DynamoDB returns a response with the most up-to-date data, reflecting the updates from all prior write operations that were successful.
+
+### DynamoDB 读写容量模式
+- On-demand
+  
+  Amazon DynamoDB on-demand is a flexible billing option capable of serving thousands of requests per second without capacity planning. DynamoDB on-demand offers pay-per-request pricing for read and write requests so that you pay only for what you use.
+
+  On-demand mode is a good option if any of the following are true:
+
+  - You create new tables with unknown workloads.
+
+  - You have unpredictable application traffic.
+
+  - You prefer the ease of paying for only what you use.
+
+- Provisioned (default, free-tier eligible)
+
+  If you choose provisioned mode, you specify the number of reads and writes per second that you require for your application. You can use auto scaling to adjust your table’s provisioned capacity automatically in response to traffic changes. This helps you govern your DynamoDB use to stay at or below a defined request rate in order to obtain cost predictability.
+
+  Provisioned mode is a good option if any of the following are true:
+
+  - You have predictable application traffic.
+
+  - You run applications whose traffic is consistent or ramps gradually.
+
+  - You can forecast capacity requirements to control costs.
+
+### 分区与数据匹配
+
+Amazon DynamoDB stores data in partitions. A partition is an allocation of storage for a table, backed by solid state drives (SSDs) and automatically replicated across multiple Availability Zones within an AWS Region. Partition management is handled entirely by DynamoDB—you never have to manage partitions yourself.

@@ -1,0 +1,10 @@
+[
+  {
+    "AttributeName": "projectName",
+    "AttributeType": "S"
+  },
+  {
+    "AttributeName": "projectType",
+    "AttributeType": "S"
+  }
+]

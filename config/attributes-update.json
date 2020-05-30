@@ -1,0 +1,18 @@
+[
+  {
+    "AttributeName": "projectName",
+    "AttributeType": "S"
+  },
+  {
+    "AttributeName": "projectType",
+    "AttributeType": "S"
+  },
+  {
+    "AttributeName": "memberName",
+    "AttributeType": "S"
+  },
+  {
+    "AttributeName": "startDate",
+    "AttributeType": "S"
+  }
+]

@@ -1,0 +1,10 @@
+[
+  {
+    "AttributeName": "projectName",
+    "KeyType": "HASH"
+  },
+  {
+    "AttributeName": "projectType",
+    "KeyType": "RANGE"
+  }
+]
