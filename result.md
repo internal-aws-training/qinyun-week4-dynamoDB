@@ -108,3 +108,41 @@
     }
 }
 ```
+
+## Query with condition for `memberName` field
+```json
+{
+    "Items": [
+        {
+            "startDate": {
+                "M": {
+                    "month": {
+                        "N": "3"
+                    },
+                    "year": {
+                        "N": "2019"
+                    }
+                }
+            },
+            "projectName": {
+                "S": "Rent"
+            },
+            "projectType": {
+                "S": "REA"
+            },
+            "memberName": {
+                "SS": [
+                    "Hong Wu",
+                    "Jiajun",
+                    "Qinyun",
+                    "Yan Li",
+                    "Yechun"
+                ]
+            }
+        }
+    ],
+    "Count": 1,
+    "ScannedCount": 1,
+    "ConsumedCapacity": null
+}
+```

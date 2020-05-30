@@ -1,0 +1,6 @@
+{
+  "memberName": {
+    "ComparisonOperator": "CONTAINS",
+    "AttributeValueList": [ {"S": "Qinyun"} ]
+  }
+}

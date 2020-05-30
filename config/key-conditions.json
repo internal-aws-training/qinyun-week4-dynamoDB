@@ -1,0 +1,6 @@
+{
+  "projectName": {
+    "ComparisonOperator": "EQ",
+    "AttributeValueList": [ {"S": "Rent"} ]
+  }
+}
