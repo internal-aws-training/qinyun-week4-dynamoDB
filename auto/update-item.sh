@@ -1,4 +1,4 @@
-#!bin/bash
+#!/bin/bash
 
 cd $(dirname $0)/..
 
@@ -7,4 +7,3 @@ aws dynamodb update-item \
   --key file://config/key.json \
   --attribute-updates file://config/attribute-update.json \
   --return-values ALL_NEW
-  

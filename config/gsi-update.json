@@ -1,0 +1,15 @@
+[
+  {
+    "Create": {
+      "IndexName": "memberName",
+      "KeySchema": [{
+        "AttributeName": "memberName",
+        "KeyType": "HASH"
+      }],
+      "Projection": {
+        "ProjectionType": "ALL"
+      }
+    }
+  }
+]
+
