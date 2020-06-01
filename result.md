@@ -279,3 +279,77 @@
     }
 }
 ```
+
+## Scan by index
+```json
+{
+    "Items": [
+        {
+            "startDate": {
+                "M": {
+                    "month": {
+                        "N": "3"
+                    },
+                    "year": {
+                        "N": "2019"
+                    }
+                }
+            },
+            "projectName": {
+                "S": "Rent"
+            },
+            "projectType": {
+                "S": "REA"
+            },
+            "memberName": {
+                "S": "Yan Li"
+            }
+        },
+        {
+            "startDate": {
+                "M": {
+                    "month": {
+                        "N": "2"
+                    },
+                    "year": {
+                        "N": "2019"
+                    }
+                }
+            },
+            "projectName": {
+                "S": "Customer"
+            },
+            "projectType": {
+                "S": "REA"
+            },
+            "memberName": {
+                "S": "Yan Li"
+            }
+        },
+        {
+            "startDate": {
+                "M": {
+                    "month": {
+                        "N": "1"
+                    },
+                    "year": {
+                        "N": "2019"
+                    }
+                }
+            },
+            "projectName": {
+                "S": "Data"
+            },
+            "projectType": {
+                "S": "REA"
+            },
+            "memberName": {
+                "S": "Zhuowen"
+            }
+        }
+    ],
+    "Count": 3,
+    "ScannedCount": 3,
+    "ConsumedCapacity": null
+}
+```
