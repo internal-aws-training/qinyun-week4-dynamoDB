@@ -114,16 +114,16 @@
       }
       ```
 
-  - ### Set
+    -  Set
 
-  A set type can represent multiple scalar values. The set types are string set, number set, and binary set.
-  ```
-  ["Black", "Green", "Red"]
+      A set type can represent multiple scalar values. The set types are string set, number set, and binary set.
+      ```
+      ["Black", "Green", "Red"]
 
-  [42.2, -19, 7.5, 3.14]
+      [42.2, -19, 7.5, 3.14]
 
-  ["U3Vubnk=", "UmFpbnk=", "U25vd3k="] 
-  ```
+      ["U3Vubnk=", "UmFpbnk=", "U25vd3k="] 
+      ```
 
 ### DynamoDB 数据一致性
 
